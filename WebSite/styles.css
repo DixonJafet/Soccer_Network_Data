@@ -1,0 +1,347 @@
+:root {
+    --primary-color: #1a472a;
+    --secondary-color: #2d5a3d;
+    --accent-color: #4ecca3;
+    --text-color: #333;
+    --light-bg: #f5f5f5;
+    --border-color: #ddd;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: var(--text-color);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.game-selector {
+    padding: 30px;
+    background: var(--light-bg);
+    border-bottom: 2px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.game-selector label {
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.1em;
+}
+
+.game-selector select {
+    padding: 12px 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 6px;
+    background: white;
+    color: var(--primary-color);
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    min-width: 300px;
+}
+
+.game-selector select:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+.game-selector select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 71, 42, 0.1);
+}
+
+.match-header {
+    background: var(--light-bg);
+    padding: 30px;
+    border-bottom: 2px solid var(--border-color);
+    text-align: center;
+}
+
+.match-header h2 {
+    color: var(--primary-color);
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.teams-info {
+    font-size: 1.3em;
+    color: var(--secondary-color);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.vs {
+    color: var(--accent-color);
+    padding: 0 15px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.content-hidden {
+    display: none;
+}
+
+.timeline-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.timeline-images {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.image-section {
+    background: var(--light-bg);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.image-section:hover {
+    transform: translateY(-5px);
+}
+
+.image-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 400px;
+    background: white;
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.image-section img:hover {
+    transform: scale(1.02);
+}
+
+.timeline-events {
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.timeline-event {
+    margin-bottom: 30px;
+    padding-left: 100px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.timeline-event:hover {
+    transform: translateX(10px);
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 18px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
+    background: white;
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.timeline-event:hover::before {
+    width: 35px;
+    height: 35px;
+    left: 13px;
+    background: var(--accent-color);
+}
+
+.event-time {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: var(--primary-color);
+    width: 80px;
+    text-align: right;
+}
+
+.event-content {
+    background: var(--light-bg);
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid var(--accent-color);
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.timeline-event:hover .event-content {
+    background: white;
+    border-left-color: var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.event-title {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.event-details {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+}
+
+.event-team {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+.event-player {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.loading-message,
+.error-message {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.1em;
+}
+
+.loading-message {
+    color: var(--primary-color);
+    display: block;
+}
+
+.error-message {
+    color: #d32f2f;
+    background: #ffebee;
+    border: 2px solid #d32f2f;
+    border-radius: 8px;
+    margin: 20px;
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .timeline-container {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 768px) {
+    .game-selector {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .game-selector label,
+    .game-selector select {
+        width: 100%;
+    }
+
+    .timeline-event {
+        padding-left: 70px;
+    }
+
+    .event-time {
+        width: 60px;
+        font-size: 1em;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-event::before {
+        left: 10px;
+    }
+
+    .timeline-event:hover::before {
+        left: 5px;
+    }
+}
