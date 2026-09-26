@@ -34,24 +34,25 @@ body {
 header {
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    padding: 40px 20px;
+    padding: 28px 20px;
     text-align: center;
 }
 
 header h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.1em;
-    opacity: 0.9;
+.toolbar {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+    background: var(--light-bg);
+    border-bottom: 2px solid var(--border-color);
 }
 
 .game-selector {
-    padding: 30px;
-    background: var(--light-bg);
-    border-bottom: 2px solid var(--border-color);
+    flex: 1;
+    padding: 20px 30px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -88,35 +89,42 @@ header p {
 }
 
 .match-header {
-    background: var(--light-bg);
-    padding: 30px;
-    border-bottom: 2px solid var(--border-color);
+    background: white;
     text-align: center;
+}
+
+.match-header.compact {
+    min-width: 330px;
+    padding: 14px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 2px solid var(--border-color);
 }
 
 .match-header h2 {
     color: var(--primary-color);
-    font-size: 2em;
-    margin-bottom: 15px;
+    font-size: 1.25em;
+    margin-bottom: 8px;
 }
 
 .teams-info {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--secondary-color);
     font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
 }
 
 .vs {
     color: var(--accent-color);
-    padding: 0 15px;
-    background: white;
+    padding: 0 10px;
+    background: var(--light-bg);
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 38px;
+    height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,6 +312,16 @@ header p {
 }
 
 @media (max-width: 1024px) {
+    .toolbar {
+        flex-direction: column;
+    }
+
+    .match-header.compact {
+        border-left: 0;
+        border-top: 2px solid var(--border-color);
+        min-width: 0;
+    }
+
     .timeline-container {
         grid-template-columns: 1fr;
     }
