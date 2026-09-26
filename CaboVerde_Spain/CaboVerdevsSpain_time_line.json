@@ -1,0 +1,99 @@
+{
+    "Team1": "Cabo Verde",
+    "Team2": "Spain",
+    "events": [
+        {
+            "title": "FirstHalf",
+            "minute": 0,
+            "section_id": 1,
+            "imageUrl": ""
+        },
+        {
+            "title": "SecondHalf",
+            "minute": 45,
+            "section_id": 2,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 60,
+            "team": "Cabo Verde",
+            "playerOff": "Jovane Cabral",
+            "playerOn": "Willy Semedo",
+            "section_id": 3,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 60,
+            "team": "Cabo Verde",
+            "playerOff": "Laros Duarte",
+            "playerOn": "Deroy Duarte",
+            "section_id": 3,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 60,
+            "team": "Cabo Verde",
+            "playerOff": "Dailon Livramento",
+            "playerOn": "Nuno da Costa",
+            "section_id": 3,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 70,
+            "team": "Spain",
+            "playerOff": "Fabi\u00e1n Ruiz",
+            "playerOn": "Mikel Merino",
+            "section_id": 4,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 70,
+            "team": "Spain",
+            "playerOff": "Gavi",
+            "playerOn": "Lamine Yamal",
+            "section_id": 4,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 75,
+            "team": "Cabo Verde",
+            "playerOff": "Sidny Cabral",
+            "playerOn": "Jo\u00e3o Paulo",
+            "section_id": 5,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 78,
+            "team": "Cabo Verde",
+            "playerOff": "Jamiro Monteiro",
+            "playerOn": "Telmo Arcanjo",
+            "section_id": 6,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 80,
+            "team": "Spain",
+            "playerOff": "Ferran Torres",
+            "playerOn": "Dani Olmo",
+            "section_id": 7,
+            "imageUrl": ""
+        },
+        {
+            "title": "Substitution",
+            "minute": 86,
+            "team": "Spain",
+            "playerOff": "Rodri",
+            "playerOn": "Nico Williams",
+            "section_id": 8,
+            "imageUrl": ""
+        }
+    ]
+}
