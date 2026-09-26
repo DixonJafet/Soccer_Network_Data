@@ -2,7 +2,7 @@ const gameSelect = document.getElementById('gameSelect');
 const content = document.getElementById('content');
 const loadingMessage = document.getElementById('loadingMessage');
 const errorMessage = document.getElementById('errorMessage');
-const matchTitle = document.getElementById('matchTitle');
+
 const team1Span = document.getElementById('team1');
 const team2Span = document.getElementById('team2');
 const imageTeam1Label = document.getElementById('imageTeam1Label');
@@ -51,7 +51,7 @@ gameSelect.addEventListener('change', async (e) => {
 });
 
 function displayMatch(data) {
-    matchTitle.textContent = `${data.Team1} vs ${data.Team2}`;
+
     team1Span.textContent = data.Team1;
     team2Span.textContent = data.Team2;
     imageTeam1Label.textContent = data.Team1;
