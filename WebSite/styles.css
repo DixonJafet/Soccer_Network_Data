@@ -31,17 +31,6 @@ body {
     overflow: hidden;
 }
 
-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: white;
-    padding: 28px 20px;
-    text-align: center;
-}
-
-header h1 {
-    font-size: 2.5em;
-}
-
 .toolbar {
     display: flex;
     align-items: stretch;
@@ -108,11 +97,6 @@ header h1 {
     box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
 }
 
-.match-header {
-    background: white;
-    text-align: center;
-}
-
 .match-header.compact {
     min-width: 330px;
     padding: 14px 25px;
@@ -124,19 +108,15 @@ header h1 {
     color: white;
 }
 
-.match-header h2 {
-    color: var(--primary-color);
+.match-header.compact h2 {
+    color: white;
     font-size: 1.25em;
     margin-bottom: 8px;
 }
 
-.match-header.compact h2 {
-    color: white;
-}
-
 .teams-info {
     font-size: 1.1em;
-    color: var(--secondary-color);
+    color: white;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -144,26 +124,16 @@ header h1 {
     gap: 12px;
 }
 
-.match-header.compact .teams-info {
-    color: white;
-}
-
 .vs {
-    color: var(--accent-color);
+    color: white;
     padding: 0 10px;
-    background: var(--light-bg);
+    background: rgba(255,255,255,0.18);
     border-radius: 50%;
     width: 38px;
     height: 38px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: var(--shadow);
-}
-
-.match-header.compact .vs {
-    color: white;
-    background: rgba(255,255,255,0.18);
     box-shadow: none;
 }
 
@@ -172,31 +142,19 @@ header h1 {
 }
 
 .timeline-container {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    padding: 20px;
-    overflow-x: auto;
-    align-items: flex-start;
-    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
 }
 
 .timeline-images {
     display: flex;
-    flex-direction: row;
-    gap: 20px;
-    min-width: 520px;
-    position: sticky;
-    left: 0;
-    background: white;
-    padding: 10px 0;
-    z-index: 2;
-    flex-shrink: 0;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .image-section {
-    width: 240px;
-    min-width: 240px;
     background: var(--light-bg);
     border-radius: 10px;
     padding: 20px;
@@ -219,7 +177,7 @@ header h1 {
     height: auto;
     border-radius: 8px;
     object-fit: cover;
-    max-height: 300px;
+    max-height: 400px;
     background: white;
     border: 2px solid var(--border-color);
     transition: transform 0.3s ease;
@@ -230,47 +188,45 @@ header h1 {
 }
 
 .timeline-events {
-    flex: 1;
-    min-width: 560px;
+    display: flex;
+    flex-direction: column;
 }
 
 .timeline {
-    display: flex;
-    flex-direction: row;
-    gap: 18px;
-    align-items: flex-start;
-    overflow-x: auto;
-    padding: 20px 10px 10px;
-    min-height: 420px;
+    position: relative;
+    padding: 20px 0;
 }
 
 .timeline::before {
-    display: none;
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
 }
 
 .timeline-event {
-    min-width: 260px;
-    width: 260px;
-    margin-bottom: 0;
-    padding-left: 0;
+    margin-bottom: 30px;
+    padding-left: 100px;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s ease;
-    flex-shrink: 0;
 }
 
 .timeline-event:hover {
-    transform: translateY(-8px);
+    transform: translateX(10px);
 }
 
 .timeline-event::before {
     content: '';
     position: absolute;
-    left: 50%;
-    top: -6px;
-    transform: translateX(-50%);
-    width: 16px;
-    height: 16px;
+    left: 18px;
+    top: 5px;
+    width: 25px;
+    height: 25px;
     background: white;
     border: 4px solid var(--primary-color);
     border-radius: 50%;
@@ -279,22 +235,21 @@ header h1 {
 }
 
 .timeline-event:hover::before {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
+    left: 13px;
     background: var(--accent-color);
-    left: 50%;
-    top: -8px;
 }
 
 .event-time {
-    position: static;
-    display: block;
-    width: auto;
-    text-align: center;
-    padding: 24px 0 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
     font-weight: 700;
     font-size: 1.2em;
     color: var(--primary-color);
+    width: 80px;
+    text-align: right;
 }
 
 .event-content {
@@ -304,7 +259,6 @@ header h1 {
     border-left: 4px solid var(--accent-color);
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
-    min-height: 160px;
 }
 
 .timeline-event:hover .event-content {
@@ -382,16 +336,7 @@ header h1 {
     }
 
     .timeline-container {
-        flex-direction: column;
-    }
-
-    .timeline-images {
-        min-width: 100%;
-        position: static;
-    }
-
-    .timeline-events {
-        min-width: 100%;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -407,11 +352,23 @@ header h1 {
     }
 
     .timeline-event {
-        min-width: 220px;
-        width: 220px;
+        padding-left: 70px;
     }
 
-    .event-content {
-        min-height: 140px;
+    .event-time {
+        width: 60px;
+        font-size: 1em;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-event::before {
+        left: 10px;
+    }
+
+    .timeline-event:hover::before {
+        left: 5px;
     }
 }
