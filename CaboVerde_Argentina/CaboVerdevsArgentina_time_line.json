@@ -6,7 +6,8 @@
             "title": "FirstHalf",
             "minute": 0,
             "section_id": 1,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec1.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec1.png"
         },
         {
             "title": "Goal",
@@ -14,13 +15,15 @@
             "team": "Argentina",
             "player": "Lionel Messi",
             "section_id": 2,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec2.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec2.png"
         },
         {
             "title": "SecondHalf",
             "minute": 45,
             "section_id": 3,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec3.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec3.png"
         },
         {
             "title": "Goal",
@@ -28,25 +31,28 @@
             "team": "Cabo Verde",
             "player": "Deroy Duarte",
             "section_id": 4,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec4.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec4.png"
         },
         {
             "title": "Substitution",
             "minute": 62,
             "team": "Argentina",
-            "playerOff": "Lautaro Mart\u00ednez",
-            "playerOn": "Juli\u00e1n Alvarez",
+            "playerOff": "Lautaro Martínez",
+            "playerOn": "Julián Alvarez",
             "section_id": 5,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec5.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec5.png"
         },
         {
             "title": "Substitution",
             "minute": 63,
             "team": "Argentina",
             "playerOff": "Thiago Almada",
-            "playerOn": "Nico Gonz\u00e1lez",
+            "playerOn": "Nico González",
             "section_id": 5,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec5.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec5.png"
         },
         {
             "title": "Substitution",
@@ -55,7 +61,8 @@
             "playerOff": "Laros Duarte",
             "playerOn": "Jamiro Monteiro",
             "section_id": 6,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec6.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec6.png"
         },
         {
             "title": "Substitution",
@@ -64,7 +71,8 @@
             "playerOff": "Nuno da Costa",
             "playerOn": "Dailon Livramento",
             "section_id": 6,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec6.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec6.png"
         },
         {
             "title": "Substitution",
@@ -73,39 +81,44 @@
             "playerOff": "Ryan Mendes",
             "playerOn": "Willy Semedo",
             "section_id": 7,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec7.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec7.png"
         },
         {
             "title": "Substitution",
             "minute": 79,
             "team": "Cabo Verde",
             "playerOff": "Jovane Cabral",
-            "playerOn": "H\u00e9lio Varela",
+            "playerOn": "Hélio Varela",
             "section_id": 7,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec7.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec7.png"
         },
         {
             "title": "Substitution",
             "minute": 85,
             "team": "Argentina",
             "playerOff": "Facundo Medina",
-            "playerOn": "Nicol\u00e1s Tagliafico",
+            "playerOn": "Nicolás Tagliafico",
             "section_id": 9,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec9.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec9.png"
         },
         {
             "title": "FirstHalfExtraT",
             "minute": 90,
             "section_id": 10,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec10.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec10.png"
         },
         {
             "title": "Goal",
             "minute": 91,
             "team": "Argentina",
-            "player": "Lisandro Mart\u00ednez",
+            "player": "Lisandro Martínez",
             "section_id": 11,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec11.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec11.png"
         },
         {
             "title": "Substitution",
@@ -114,7 +127,8 @@
             "playerOff": "Deroy Duarte",
             "playerOn": "Yannick Semedo",
             "section_id": 12,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec12.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec12.png"
         },
         {
             "title": "Substitution",
@@ -123,7 +137,8 @@
             "playerOff": "Kevin Pina",
             "playerOn": "Gilson Benchimol",
             "section_id": 12,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec12.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec12.png"
         },
         {
             "title": "Goal",
@@ -131,27 +146,33 @@
             "team": "Cabo Verde",
             "player": "Sidny Cabral",
             "section_id": 13,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec13.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec13.png"
         },
         {
             "title": "SubstitutionOff",
             "minute": 103,
             "team": "Argentina",
             "player": "Nahuel Molina",
-            "section_id": 13
+            "section_id": 13,
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec13.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec13.png"
         },
         {
             "title": "SubstitutionOn",
             "minute": 103,
             "team": "Argentina",
             "player": "Gonzalo Montiel",
-            "section_id": 13
+            "section_id": 13,
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec13.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec13.png"
         },
         {
             "title": "SecondHalfExtraT",
             "minute": 105,
             "section_id": 14,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec14.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec14.png"
         },
         {
             "title": "Goal",
@@ -159,7 +180,8 @@
             "team": "Cabo Verde",
             "player": "Diney Borges",
             "section_id": 15,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/CaboVerde/CBVvsARG_CBV_sec15.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Argentina/Argentina/CBVvsARG_ARG_sec15.png"
         }
     ]
 }
