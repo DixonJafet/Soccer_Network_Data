@@ -6,13 +6,15 @@
             "title": "FirstHalf",
             "minute": 0,
             "section_id": 1,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec1.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec1.png"
         },
         {
             "title": "SecondHalf",
             "minute": 45,
             "section_id": 2,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec2.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec2.png"
         },
         {
             "title": "Substitution",
@@ -21,7 +23,8 @@
             "playerOff": "Jovane Cabral",
             "playerOn": "Willy Semedo",
             "section_id": 3,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec3.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec3.png"
         },
         {
             "title": "Substitution",
@@ -30,7 +33,8 @@
             "playerOff": "Laros Duarte",
             "playerOn": "Deroy Duarte",
             "section_id": 3,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec3.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec3.png"
         },
         {
             "title": "Substitution",
@@ -39,16 +43,18 @@
             "playerOff": "Dailon Livramento",
             "playerOn": "Nuno da Costa",
             "section_id": 3,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec3.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec3.png"
         },
         {
             "title": "Substitution",
             "minute": 70,
             "team": "Spain",
-            "playerOff": "Fabi\u00e1n Ruiz",
+            "playerOff": "Fabián Ruiz",
             "playerOn": "Mikel Merino",
             "section_id": 4,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec4.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec4.png"
         },
         {
             "title": "Substitution",
@@ -57,16 +63,18 @@
             "playerOff": "Gavi",
             "playerOn": "Lamine Yamal",
             "section_id": 4,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec4.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec4.png"
         },
         {
             "title": "Substitution",
             "minute": 75,
             "team": "Cabo Verde",
             "playerOff": "Sidny Cabral",
-            "playerOn": "Jo\u00e3o Paulo",
+            "playerOn": "João Paulo",
             "section_id": 5,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec5.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec5.png"
         },
         {
             "title": "Substitution",
@@ -75,7 +83,8 @@
             "playerOff": "Jamiro Monteiro",
             "playerOn": "Telmo Arcanjo",
             "section_id": 6,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec6.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec6.png"
         },
         {
             "title": "Substitution",
@@ -84,7 +93,8 @@
             "playerOff": "Ferran Torres",
             "playerOn": "Dani Olmo",
             "section_id": 7,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec7.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec7.png"
         },
         {
             "title": "Substitution",
@@ -93,7 +103,8 @@
             "playerOff": "Rodri",
             "playerOn": "Nico Williams",
             "section_id": 8,
-            "imageUrl": ""
+            "imageTeam1Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/CaboVerde/CBVvsSPN_CBV_sec8.png",
+            "imageTeam2Url": "https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/CaboVerde_Spain/Spain/CBVvsSPN_SPN_sec8.png"
         }
     ]
 }
