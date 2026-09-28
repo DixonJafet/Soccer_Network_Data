@@ -1,10 +1,12 @@
 const gameSelect = document.getElementById('gameSelect');
 const content = document.getElementById('content');
+const timelineEvents = document.getElementById('timelineEvents');
 const loadingMessage = document.getElementById('loadingMessage');
 const errorMessage = document.getElementById('errorMessage');
+const timeline = document.querySelector('.timeline');
+const timelineLeft = document.getElementById('timelineLeft');
+const timelineRight = document.getElementById('timelineRight');
 
-const team1Span = document.getElementById('team1');
-const team2Span = document.getElementById('team2');
 const imageTeam1Label = document.getElementById('imageTeam1Label');
 const imageTeam2Label = document.getElementById('imageTeam2Label');
 const imageTeam1 = document.getElementById('imageTeam1');
@@ -17,15 +19,28 @@ let currentSectionId = null;
 // Base URL for GitHub raw content
 const BASE_URL = 'https://raw.githubusercontent.com/DixonJafet/Soccer_Network_Data/main/';
 
+timelineLeft.addEventListener('click', () => {
+    timeline.scrollBy({ left: -timeline.clientWidth * 0.8, behavior: 'smooth' });
+});
+
+timelineRight.addEventListener('click', () => {
+    timeline.scrollBy({ left: timeline.clientWidth * 0.8, behavior: 'smooth' });
+});
+
+timeline.addEventListener('scroll', updateTimelineNavigation);
+window.addEventListener('resize', updateTimelineNavigation);
+
 gameSelect.addEventListener('change', async (e) => {
     if (!e.target.value) {
         content.classList.add('content-hidden');
+        timelineEvents.classList.add('content-hidden');
         errorMessage.style.display = 'none';
         return;
     }
 
     loadingMessage.style.display = 'block';
     content.classList.add('content-hidden');
+    timelineEvents.classList.add('content-hidden');
     errorMessage.style.display = 'none';
 
     try {
@@ -37,6 +52,8 @@ gameSelect.addEventListener('change', async (e) => {
         
         loadingMessage.style.display = 'none';
         content.classList.remove('content-hidden');
+        timelineEvents.classList.remove('content-hidden');
+        updateTimelineNavigation();
         
         // Load the first event by default
         if (currentData.events.length > 0) {
@@ -52,8 +69,6 @@ gameSelect.addEventListener('change', async (e) => {
 
 function displayMatch(data) {
 
-    team1Span.textContent = data.Team1;
-    team2Span.textContent = data.Team2;
     imageTeam1Label.textContent = data.Team1;
     imageTeam2Label.textContent = data.Team2;
 
@@ -108,6 +123,14 @@ function displayMatch(data) {
 
         timelineContent.appendChild(eventElement);
     });
+
+    updateTimelineNavigation();
+}
+
+function updateTimelineNavigation() {
+    const maxScroll = timeline.scrollWidth - timeline.clientWidth;
+    timelineLeft.disabled = timeline.scrollLeft <= 0;
+    timelineRight.disabled = timeline.scrollLeft >= maxScroll - 1;
 }
 
 function formatEventTitle(events) {

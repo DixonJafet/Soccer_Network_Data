@@ -16,10 +16,10 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #88ec15 0%, #4ecca3 100%);
     color: var(--text-color);
     min-height: 100vh;
-    padding: 20px;
+    padding: 3px 0px 0px 0px;
 }
 
 .container {
@@ -33,8 +33,9 @@ body {
 
 .toolbar {
     display: flex;
-    align-items: stretch;
-    gap: 0;
+    align-items: center;
+    gap: 1.2px;
+    min-width: 0;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
@@ -59,32 +60,29 @@ body {
 }
 
 .game-selector {
-    flex: 1;
-    padding: 20px 30px;
+    flex: 0 0 250px;
+    min-width: 0;
+    padding: 10px 0px 10px 10px;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     flex-wrap: wrap;
     background: rgba(255,255,255,0.04);
 }
 
-.game-selector label {
-    font-weight: 600;
-    color: white;
-    font-size: 1.1em;
-}
+
 
 .game-selector select {
-    padding: 12px 20px;
+    padding: 8px 12px;
     border: 2px solid rgba(255,255,255,0.5);
     border-radius: 6px;
     background: white;
     color: var(--primary-color);
-    font-size: 1em;
+    font-size: 0.85em;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
-    min-width: 300px;
+    min-width: 230px;
 }
 
 .game-selector select:hover {
@@ -114,15 +112,6 @@ body {
     margin-bottom: 8px;
 }
 
-.teams-info {
-    font-size: 1.1em;
-    color: white;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-}
 
 .vs {
     color: white;
@@ -142,153 +131,188 @@ body {
 }
 
 .timeline-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 1px 5px;
 }
 
 .timeline-images {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+    order: 1;
 }
 
 .image-section {
     background: var(--light-bg);
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s ease;
-}
-
-.image-section:hover {
-    transform: translateY(-5px);
+    min-width: 0;
 }
 
 .image-section h3 {
     color: var(--primary-color);
-    margin-bottom: 15px;
-    font-size: 1.1em;
+    margin: 0;
+    padding: 4px 6px;
+    font-size: 0.7em;
 }
 
 .image-section img {
+    display: block;
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    max-height: 400px;
+    max-height: none;
     background: white;
-    border: 2px solid var(--border-color);
-    transition: transform 0.3s ease;
-}
-
-.image-section img:hover {
-    transform: scale(1.02);
 }
 
 .timeline-events {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    align-self: center;
+    padding: 4px 10px 4px 0;
 }
 
 .timeline {
     position: relative;
-    padding: 20px 0;
+    overflow-x: auto;
+    padding: 2px 0 2px;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+.timeline::-webkit-scrollbar {
+    display: none;
+}
+
+.timeline-nav {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    width: 30px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.45);
+    color: white;
+    font: inherit;
+    font-size: 1.6rem;
+    line-height: 1;
+    opacity: 0.65;
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+.timeline-nav:hover:not(:disabled) {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.timeline-nav:disabled {
+    opacity: 0.2;
+    cursor: default;
+}
+
+.timeline-nav-left {
+    left: 2px;
+}
+
+.timeline-nav-right {
+    right: 12px;
 }
 
 .timeline::before {
     content: '';
     position: absolute;
-    left: 30px;
-    top: 0;
-    bottom: 0;
-    width: 3px;
-    background: linear-gradient(180deg, var(--primary-color), var(--accent-color));
+    left: 12px;
+    right: 12px;
+    top: 28px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
     border-radius: 2px;
 }
 
+
+
+#timelineContent {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    width: max-content;
+    min-width: 100%;
+    padding: 0 8px 0px;
+}
+
+#timelineEvents{
+    padding: 0px 12px 0px 0px;
+}
+
 .timeline-event {
-    margin-bottom: 30px;
-    padding-left: 100px;
+    flex: 0 0 270px;
+    padding-top: 16px;
     position: relative;
     cursor: pointer;
     transition: transform 0.2s ease;
 }
 
 .timeline-event:hover {
-    transform: translateX(10px);
-}
-
-.timeline-event::before {
-    content: '';
-    position: absolute;
-    left: 18px;
-    top: 5px;
-    width: 25px;
-    height: 25px;
-    background: white;
-    border: 4px solid var(--primary-color);
-    border-radius: 50%;
-    box-shadow: var(--shadow);
-    transition: all 0.3s ease;
-}
-
-.timeline-event:hover::before {
-    width: 35px;
-    height: 35px;
-    left: 13px;
-    background: var(--accent-color);
+    transform: translateY(-4px);
 }
 
 .event-time {
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0px;
     font-weight: 700;
-    font-size: 1.2em;
-    color: var(--primary-color);
-    width: 80px;
-    text-align: right;
+    font-size: 0.7em;
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
 .event-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
     background: var(--light-bg);
-    padding: 15px 20px;
+    padding: 3px 5px;
     border-radius: 8px;
-    border-left: 4px solid var(--accent-color);
+    border-top: 4px solid var(--accent-color);
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .timeline-event:hover .event-content {
     background: white;
-    border-left-color: var(--primary-color);
+    border-top-color: var(--primary-color);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .event-title {
     font-weight: 700;
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: var(--primary-color);
-    margin-bottom: 8px;
+    margin-bottom: 3px;
 }
 
 .event-details {
-    font-size: 0.95em;
+    font-size: 0.75em;
     color: #666;
-    line-height: 1.6;
+    line-height: 1.25;
 }
 
 .event-team {
     display: inline-block;
     background: var(--primary-color);
     color: white;
-    padding: 4px 12px;
+    padding: 2px 6px;
     border-radius: 20px;
-    font-size: 0.9em;
+    font-size: 0.75em;
     font-weight: 600;
-    margin-right: 8px;
+    margin-right: 3px;
 }
 
 .event-player {
@@ -299,7 +323,7 @@ body {
 .loading-message,
 .error-message {
     text-align: center;
-    padding: 40px;
+    padding: 20px;
     font-size: 1.1em;
 }
 
@@ -313,30 +337,23 @@ body {
     background: #ffebee;
     border: 2px solid #d32f2f;
     border-radius: 8px;
-    margin: 20px;
+    margin: 12px;
     display: none;
 }
 
 @media (max-width: 1024px) {
     .toolbar {
         flex-direction: column;
+        gap: 0;
     }
 
-    .toolbar-title {
-        border-left: 0;
-        border-right: 0;
-        border-top: 2px solid rgba(255,255,255,0.2);
-        border-bottom: 2px solid rgba(255,255,255,0.2);
+    .game-selector {
+        flex-basis: auto;
     }
 
-    .match-header.compact {
-        border-left: 0;
-        border-top: 2px solid rgba(255,255,255,0.2);
-        min-width: 0;
-    }
-
-    .timeline-container {
-        grid-template-columns: 1fr;
+    .timeline-events {
+        width: 100%;
+        padding: 0 12px 8px;
     }
 }
 
@@ -351,24 +368,15 @@ body {
         width: 100%;
     }
 
-    .timeline-event {
-        padding-left: 70px;
+    .timeline-images {
+        gap: 6px;
     }
 
-    .event-time {
-        width: 60px;
-        font-size: 1em;
+    .image-section {
+        padding: 0;
     }
 
-    .timeline::before {
-        left: 20px;
-    }
-
-    .timeline-event::before {
-        left: 10px;
-    }
-
-    .timeline-event:hover::before {
-        left: 5px;
+    .image-section h3 {
+        font-size: 0.75em;
     }
 }
